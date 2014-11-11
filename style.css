@@ -1,0 +1,188 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	height:auto;
+}
+
+html {
+	
+}
+body{
+
+}
+.main {
+	background: #6ecff6;
+	width:357px;
+	height:635px;
+	margin: 10px auto;
+	z-index: 100;
+	position: relative;
+	left:5px;
+	top: 125px;
+}
+.intro {
+	z-index: 300;
+}
+.heading{
+	transition: all 0.7s ease-in;
+}
+.intro, .films, .sliders {
+	display: table;
+	width: 357px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.centerer {
+  display: table-cell;
+  vertical-align: middle;
+}
+.selectFilm {
+	border: 1px solid white;
+	padding-top: 9px;
+	width: 80%;
+}
+.row {
+	margin-bottom: 20px;
+}
+.films{ 
+	padding-top:150px;
+	z-index: 200;
+}
+.films img {
+	display: inline-block;
+	width: 49%;
+	opacity: 0;
+	transition: all 0.7s ease-in;
+}
+img {
+  width: 100%;
+}
+.otherfest img, .next img{
+	border: 1px solid white;
+	padding:0;
+	width:60%;
+	margin-top:20px;
+}
+.next img{
+	display:none;
+}
+[src$="tiff.png"] { transform: translate(-200px, -200px); }
+[src$="sundance.png"] { transform: translate(200px, -200px); }
+[src$="cannes.png"] { transform: translate(-200px, 200px); }
+[src$="sfiff.png"] { transform: translate(200px, 200px); }
+[src$="otherFest.png"] { transform: translate(0px, 200px); }
+
+.films img.loaded {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.slide{
+	display: none;
+}
+/*.star1{
+	width: 15%;
+	display:inline-block;
+	margin:10px;
+	float:left;
+	padding:0;
+}
+.star2{
+	width: 15%;
+	display:inline-block;
+	margin:20px 10px;
+	float:right;
+	padding:0;
+}*/
+.step2 img{
+width:50%;
+height:auto;
+margin-bottom:0;
+margin-top:50px;
+}
+.params{
+	width:70%;
+	height:auto;
+	position:relative;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.slider_bar{
+background-color: #ffffff;
+height:auto;
+}
+.stars img{
+/*	margin-top:50px;
+*/}
+
+.sglide-buttons{
+	display: none;
+	visibility: hidden;
+}
+
+.follow_bar
+{
+	background-color: #f7931e;
+}
+
+.slide-box
+{
+	position: relative;
+	height:auto;
+}
+
+#phoneFrame
+{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+#frameImage
+{
+	width: 632px;
+	height: auto;
+	display: inline-block;
+}
